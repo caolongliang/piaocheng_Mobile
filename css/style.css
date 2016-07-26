@@ -1,0 +1,416 @@
+@charset "utf-8";
+html{
+	font-size:625%;
+	/*100px*/
+
+}
+body,h1,ul,h2,h3,h4,p,figure{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-size: 0.16rem;
+}
+ul ,ol{
+	list-style:  outside none none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+div,figure,figcaption{
+	box-sizing: border-box;
+}
+.claerfix:after{
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.none{
+	display: none;
+}
+#header{
+	width: 100%;
+	height: 0.45rem;
+	background-color: #333;
+	font-size: 0.16rem;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+#header .link{
+	height: 0.45rem;
+	line-height: 0.45rem;
+}
+#header .link li{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+#header .link li a{
+	display: block;
+	color: #eee;	
+}
+#header .link li a:hover,#header .active a{
+	background-color: #000;
+}
+#adver {
+	max-width: 6.4rem;
+	margin:0 auto;
+	padding: .45rem 0 0 0;
+}
+#footer{
+	max-width: 6.4rem;
+	background-color: #222;
+	color: #777;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.1rem 0;
+	font-size: .16rem;
+}
+#footer .top{
+	padding: 0 0 0.05rem 0;
+}
+#search {
+	max-width:6.4rem;
+	height:.33rem;
+	margin:0 auto;
+	background-color: #ddd;
+	padding: .03rem 0 0 0;
+	position: relative;
+}
+#search .search{
+	width: 95%;
+	height: .27rem;
+	border-radius: .04rem;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	display: block;	
+	margin: 0 auto;
+	font-size: .14rem;
+	padding:0 0.05rem;
+}
+#search .button{
+	display: block;
+	outline: none;
+	position: absolute;
+	cursor: pointer;
+	width: .5rem;
+	height: .27rem;
+	color: #666;
+	border: none;
+	background-color: #eee;
+	border-top-right-radius: .04rem;
+	border-bottom-right-radius: .04rem;
+	font-size: .16rem;
+	top: 0.03rem;
+	right: 1%;
+}
+#tour {
+	max-width: 6.4rem;
+	margin: .1rem auto 0;
+
+}
+#tour h2{
+	text-align: center;
+	color: #666;
+	font-size: .26rem;
+}
+#tour h3{
+	text-align: center;
+	color: #666;
+	font-size: .16rem;
+	font-weight: normal;
+	margin: .05rem 0 .1rem 0;
+}
+#tour figure{
+	width: 49%;
+	float: left;
+	background-color: #eee;
+	font-size: .16rem;
+	padding: 0 0 .05rem 0;
+
+}
+#tour figure img{
+	padding: .02rem;
+	border-radius: .04rem;
+}
+#tour figcaption{
+	color: #666;
+	font-size: .16rem;
+	padding: .02rem .05rem;
+}
+#tour h4{
+	white-space: nowrap;
+	font-weight: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tour p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tour .info{
+	padding: .1rem 0 0 0;
+	font-size: .16rem;
+}
+#tour .price{
+	color: #f60;
+}
+#tour .price strong{
+	letter-spacing: .02rem;
+}
+#tour .sat{
+	position: relative;
+	color: #999;
+	float: right;
+	font-style: normal;
+	right: .05rem;
+}
+
+#headline{
+	max-width: 6.4rem;
+	margin: 0 auto;
+	padding: .45rem 0 0 0;
+	position: relative;
+}
+#headline hgroup{
+	position: absolute;
+	color: #eee;
+	top: 40%;
+	left: 10%;
+}
+#headline h2{
+	font-size: .22rem;
+}
+#headline h3{
+	font-size: .16rem;
+}
+.list{
+	max-width: 6.4rem;
+	margin: .15rem auto;
+	color: #666;
+	font-size: .16rem;
+	padding: .1rem;
+
+}
+.list h2{
+	font-size: .2rem;
+	border-bottom: .01rem dashed #999;
+	padding: 0 0 .15rem 0;
+}
+
+.about h2{
+	line-height: 2;
+	margin: .2rem 0;
+}
+.about address{
+	font-style: normal;
+	line-height: 1.6;
+	margin: .2rem 0;
+}
+/*资讯*/
+.information figure:after{
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.information figure{
+	max-width: 6.4rem;
+	margin: .15rem 0;
+	position: relative;
+}
+.information figure img{
+	width: 50%;
+	float: left;
+}
+.information figure figcaption{
+	width: 48%;
+	float: right;
+}
+.information .title{
+	border: none;
+	padding: 0 0 .05rem 0;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+}
+.information .small_title{
+	font-weight: normal;
+	padding: 0;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+}
+.information .price {
+	color: #f60;
+	position: absolute;
+	bottom: 0;
+}
+.information .price strong{
+	font-size: .26rem;
+}
+/*票务*/
+.ticket  .type{
+	margin: .2rem 0 .1rem 0;
+}
+.ticket  .type mark{
+	color: #fff;
+	background-color: #458b00;
+	padding: .05rem .08rem;
+	border-radius: .04rem;
+	margin: 0 0 0 .16rem;
+}
+.ticket .submit{
+	width: 30%;
+	border-radius: .04rem;
+	text-align: center;
+	color: #fff;
+	background-color: #f60;
+	border:none;	
+	padding: 0.1rem;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+.ticket .from label{
+	display: block;
+	margin: 0 0 0.05rem 0;
+}
+.ticket .from p{
+	margin: .1rem 0;
+}
+.ticket .from input{
+	width: 97%;
+	height: .2rem;
+	background-color: #fff;
+	border-radius: .04rem;
+	border: 1px solid #ccc;
+	color: #666;
+	padding: .05rem;
+	outline: none;
+}
+.ticket .new{
+	margin-top: .2rem 0 0 0;
+}
+.ticket .new ul{
+	margin: 20px 0 0 0;
+}
+.ticket .new li{
+	display: inline-block;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.ticket .new li:first-child{
+	padding-left: 0;
+}
+.ticket .new li:nth-child(2){
+	background-color: #458b60;
+	color: #fff;
+	border-radius: 4px;
+
+}
+.ticket table{
+	margin: 20px 0 0 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	
+}
+.ticket table th{
+	padding: .15rem 0;
+	border-bottom: .01rem solid #ddd;
+
+}
+.ticket table td{
+	border-bottom:.01rem solid #ddd;
+	padding: .15rem 0;
+	text-align: center;
+}
+.ticket tbody>tr:nth-child(2n){
+	background-color: #fafafa;
+}
+.ticket tbody>tr:hover{
+	background-color: #eee;
+}
+.ticket .price{
+	color: #f60;
+}
+.ticket .more_ticket{
+	color: #666;
+}
+.ticket .reserve{
+	border-radius: .04rem;
+	background-color: #f60;
+	color: #fff;
+	text-align: center;
+	padding: .05rem .08rem;
+	outline: none;
+}
+.scenery figure{
+	border: 1px solid #ddd;
+	float: left;
+	padding: 4px ;
+	border-radius: 4px;
+	margin: 15px 5px 15px 0;
+	width: 435px;
+	text-align: left;
+	font-size: 14px;
+	position: relative;
+}
+
+/*媒体查询，大于480小于640px*/
+@media (min-width: 480px) and (max-width: 640px){
+	#tour h2,.information .price strong{
+		font-size: .26rem;
+	}
+	#tour h3,#footer,#tour figcaption,#tour .info,.list{
+		font-size: .16rem;
+	}
+	#headline h2{
+		font-size: .22rem;
+	}
+	#headline h3{
+		font-size: .14rem;
+	}
+	.list h2{
+		font-size: .2rem;
+	}
+}
+/*小于480px*/
+@media (max-width: 480px){
+	#tour h2,.information .price strong{
+		font-size: .20rem;
+	}
+	#tour h3,#tour figcaption,#tour .info,.list{
+		font-size: .14rem;
+	}
+	#footer{
+		font-size: .12rem;
+	}
+	#headline h2{
+		font-size: .18rem;
+	}
+	#headline h3{
+		font-size: .13rem;
+	}
+	.list h2{
+		font-size: .17rem;
+	}
+	.min{
+		display: none;
+	}
+}
